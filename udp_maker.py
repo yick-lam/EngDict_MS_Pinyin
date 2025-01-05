@@ -26,7 +26,7 @@ def main():
 
     while idx<(len(sys.argv)-1):
         print(sys.argv[idx])
-        fp=open(sys.argv[idx], "r")
+        fp=open(sys.argv[idx], "r", encoding="utf-8")
 
         while True:
             ln = fp.readline()
