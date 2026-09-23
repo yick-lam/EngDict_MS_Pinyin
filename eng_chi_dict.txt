@@ -26,7 +26,6 @@ abbey 僧院
 abbot 男修道院長
 abbott 阿布特
 abbreviate 簡寫
-abc 字母
 abdicate 放棄
 abdicate 捨棄
 abduction 誘拐劫持
@@ -102,10 +101,6 @@ absolu 絕對
 absolution 免除
 absolutism 專制主義
 absorb 吸取
-absorbance 吸收度
-absorbancy 吸收度
-absorbedly 入神地
-absorbency 吸收性
 abstain 戒絕
 abstain 棄絕
 abstainer 戒酒的人
