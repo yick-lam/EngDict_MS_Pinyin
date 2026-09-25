@@ -6,11 +6,14 @@ import pathlib
 
 from msphraser import MschxudpBuilder
 
-USAGE="usage: %s txt_file1 txt_file2 ... dat_file\n"%(sys.argv[0]) \
-+ "A program to convert phrase text file into \"user defined phrases\" .dat file" \
+USAGE="usage: %s txt_file1_glob txt_file2_glob ... dat_file\n"%(sys.argv[0]) \
++ "A program to convert text files into \"user defined phrases\" .dat file\n" \
++ "(used for Microsoft Pinyin IME.)\n" \
++ "The text files should be in the format of:\n" \
++ "english chinese (separate with space)\n" \
 + "Example usage:\n" \
 + "%s ciyu.dic ciyu.dat\n"%(sys.argv[0]) \
-+ "%s ciyu.dic ylam.dic ciyu.dat"%(sys.argv[0])
++ "%s eng_dic_?.dat eng_misc.txt mspinyin.dat"%(sys.argv[0])
 
 def main():
     if len(sys.argv)<3:
@@ -18,8 +21,20 @@ def main():
         sys.exit()
 
     fnOut=pathlib.Path(sys.argv[-1])
-
     mfb = MschxudpBuilder()
+
+    # now we must find all the input files and read them one by one
+    inputFileList=[]
+    for arg in sys.argv[1:-1]:
+        print(arg)
+        #inputFileList.extend(pathlib.Path().glob(arg))
+
+    print(inputFileList)
+
+    sys.exit()
+
+
+
 
     n=0
     idx=1

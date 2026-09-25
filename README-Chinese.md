@@ -17,7 +17,7 @@
 apple 蘋果
 banana 香蕉
 ```
-作為一個範例， 一個漢英字典 [eng_chi_dict.txt](eng_chi_dict.txt) 已被加入了這個 repo.  
+作為一個範例， 一個漢英字典 eng_chi_a.txt 到 eng_chi_z.txt (例: [eng_chi_a.txt](eng_chi_a.txt)) 已被加入了這個 repo.  
 這個字典是繁體中文的。
 
 ## 從文本文件生成 *.dat 文件
