@@ -28,6 +28,11 @@ def main():
     for arg in sys.argv[1:-1]:
         inputFileList.extend(pathlib.Path().glob(arg))
 
+    if len(inputFileList)==0:
+        print("No input files found!")
+        sys.exit()
+
+    maxFnLen = max(len(fp.name) for fp in inputFileList)
     print("Number of input files: %d"%(len(inputFileList)))
 
     idx=0
@@ -53,7 +58,7 @@ def main():
         
         fp.close()
         numLinesTotal+=numLinesThisFile
-        print(f"{(idx+1):2d}/{len(inputFileList)}: {inputFileList[idx]} ({numLinesThisFile:4d} lines)")
+        print(f"{(idx+1):2d}/{len(inputFileList)}: {inputFileList[idx].name:<{maxFnLen}} ({numLinesThisFile:4d} lines)")
         idx+=1
     
     mfb.save(fnOut)
