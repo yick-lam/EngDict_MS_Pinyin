@@ -26,9 +26,10 @@ banana 香蕉
 1) 安裝 Python
 2) 打開 cmd 窗口並運行以下命令：
    ```sh
-   python udp_make.py eng_chi_dict.txt eng_chi_dict.dat
+   cd EngDict_MS_Pinyin
+   c:\Python\Python310\python.exe udp_maker.py eng_chi_?.txt eng_misc.txt mspinyin.dat
    ```
-3) eng_chi_dict.dat 文件已生成。
+3) mspinyin.dat 文件已生成。
    
    cmd 窗口的示例屏幕截圖：
    ![Command Window Screenshot](img/01_cmd_win.png)
@@ -36,8 +37,10 @@ banana 香蕉
    
 ## 如何導入至微軟拼音輸入法
 
-1) 在 Windows 中，請前往 系統設置 → 時間和語言 → 地區和語言 → 中文 → 首選項 → 微軟拼音 → 首選項 → 詞庫和自學 → 添加或編輯用戶定義短語： 
-   選擇添加上面生成的 eng_chi_dict.dat。 
+1) 在 Windows 中，請前往 系統設置 → 時間和語言 → 語言和地區 → 中文 → 首選項 → 微軟拼音 → 語彙與自我學習 → 使用者造詞 → 匯入、匯出或清除使用者造詞 → 匯入 → 選擇添加上面生成的 mspaint.dat   
+屏幕截圖:  
+![Command Window Screenshot](img/02.png)
+
 2) **注意:** 如果在運行 (1) 時 UI 發生卡住，這是因為之前添加的短語過多。您需要前往
    ``` txt
     C:\Users\<YOUR_NAME>\AppData\Roaming\Microsoft\InputMethod\Chs\
