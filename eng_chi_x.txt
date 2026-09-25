@@ -1,22 +1,6 @@
-﻿x Ｘ
-xanthate 黃酸鹽
-xanthe 桑希
-xanthein 黃色色素
-xanthin 黃色色素
-xanthine 黃色色素
-xanthophyl 葉黃質
+﻿xray X射線
+xenon 氙
 xavier 塞維爾
-xaviera 塞維亞拉
-xe 氙
-xenia 芝妮雅
-xenon Xe
-xenophobe 仇懼外國
-xi Ξ
-xiangliao 拉圾
-xinghuacun 杏花
-xiphoid 劍狀軟骨
-xray ｘ光線
-xx 不可分離
-xylogen 木質部
+xanthophyll 葉黃素
 xylograph 木版印刷
-xylophyta 木本植物
+
