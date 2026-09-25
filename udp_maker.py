@@ -63,6 +63,13 @@ def main():
     
     mfb.save(fnOut)
 
-    print("Generated User Defined Phrases (%d) as %s"%(numLinesTotal, fnOut))
+    print(f"Generated User Defined Phrases ({numLinesTotal}) as {fnOut}")
+    print(f"(1): 在 Windows 中，請前往 系統設置 → 時間和語言 → 地區和語言 → 中文 → 首選項 → ")
+    print(f"微軟拼音 → 首選項 → 詞庫和自學 → 添加或編輯用戶定義短語： 選擇添加上面生成的 {fnOut.name}。")
+    print()
+    print(f"注意：如果在運行 (1) 時 UI 發生卡住，這是因為之前添加的短語過多。您需要前往")
+    print(f"  C:\\Users<YOUR_NAME>\\AppData\\Roaming\\Microsoft\\InputMethod\\Chs\\")
+    print(f"文件夾（您可能需要在類似位置進行搜索），並刪除以下文件：")
+    print(f"  ChsPinyinEUDPv1.lex")
 
 main() 
